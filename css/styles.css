@@ -2009,6 +2009,12 @@ h1 {
     height: 60vh;
     object-fit: scale-down;
   }
+
+  .horizontal, .vertical {
+    flex: 0 0 calc(50% - 4px); /* 2 images in one row */
+    max-width: calc(50% - 4px);
+  }
+  
 }
 
 
