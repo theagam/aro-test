@@ -64,7 +64,7 @@ body {
       display: block;
   }
   .navbar {
-    padding: 15px 30px;
+    padding: 15px 20px;
   }
   
 .logo img {
@@ -88,6 +88,7 @@ body {
 
   .nav-links.active {
       display: flex;
+      gap: 30px;
   }
 
   .nav-links li {
@@ -412,6 +413,10 @@ body {
   margin-bottom: 60px;
 }
 .what-we-do-section p {
+  font-size: 1.1rem;
+    color: #4a4a4a;
+    line-height: 1.8;
+    text-align: justify;
   max-width: 70%;
 }
 .agriContainer {
@@ -451,16 +456,7 @@ body {
   text-align: left;
 }
 
-.agriHeader::before {
-  content: '';
-  width: 20px;
-  height: 2px;
-  background-color: #1C6A38;
-  position: absolute;
-  left: -30px;
-  top: 50%;
-  transform: translateY(-50%);
-}
+
 
 h1 {
   font-size: 48px;
@@ -572,7 +568,7 @@ h1 {
       border-bottom: none;
   }
   .agri-img img {
-      max-width: 300px;
+      max-width: 350px;
   }
 }
 
@@ -704,7 +700,9 @@ h1 {
   height: 3px;
   background: #062b13;
 }
-
+.no-after::after {
+  display: none !important;
+}
 .section-subtitle {
   font-size: 1.1rem;
   color: #666;
@@ -733,7 +731,7 @@ h1 {
   overflow: hidden;
   /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); */
   transition: all 0.3s ease;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
 }
@@ -863,13 +861,8 @@ h1 {
     max-width: calc(50% - 10px);
   }
 
-  .featured-products-section {
-    padding: 60px 0;
-  }
 
-  .products-title {
-    margin-bottom: 50px;
-  }
+
 }
 
 /*Certifications Section*/
@@ -1268,12 +1261,13 @@ h1 {
   }
 
   .what-we-do-section p {
-    max-width: 84%;
+    max-width: 100%;
+    font-size: 1rem;
+    color: #4a4a4a;
+    line-height: 1.6;
   }
 
-  .products-title {
-    margin-bottom: 60px;
-  }
+
   .products-content {
     justify-content: center;
   }
@@ -1438,7 +1432,7 @@ h1 {
 
   .narrative-content p {
       font-size: 1rem;
-      text-align: left;
+      text-align: justify;
   }
 
   .story-layout {
@@ -1461,6 +1455,7 @@ h1 {
   }
 
   .narrative-content p {
+    text-align: justify;
       font-size: 0.9rem;
   }
 }
@@ -1470,6 +1465,7 @@ h1 {
 .vision-mission-section {
   position: relative;
   /* margin-top: 50px; */
+  line-height: 1.8;
   padding-top: 75px;
   padding-bottom: 75px;
   background: #EAF2CD;
@@ -1522,12 +1518,19 @@ h1 {
 /*  font-size: 36px;*/
 /*  font-weight: Bold;*/
 /*}*/
-.vision-mission-description {
+.vision-mission-description p {
   margin-top: 20px;
+  text-align: justify;
   /* padding-left: 60px; */
   font-size: 1.125rem;
     color: #555;
 
+}
+@media screen and (max-width: 600px) {
+
+  .vision-mission-description p {
+    font-size: 0.85rem;
+  }
 }
 
 
@@ -1573,6 +1576,7 @@ h1 {
 }
 
 .farm-description {
+  text-align: justify;
   font-size: 1.125rem;
   color: #555;
   line-height: 1.6;
@@ -1637,8 +1641,8 @@ h1 {
   }
 
   .farm-description {
+    text-align: justify;
     font-size: 0.875rem;
-    text-align: left;
   }
 
   .our-farms-section {
@@ -1739,14 +1743,14 @@ h1 {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
 }
 
 .product-even-card{
-  /* padding: 0px; */
+  padding: 20px 65px;
   gap: 100px;
   width: 100%;
-  height: 400px;           
+  height: auto;           
   border-radius: 12px;     
   box-sizing: border-box;  
   display: flex;
@@ -1757,7 +1761,7 @@ h1 {
 .product-even-card img,
 .product-odd-card img {
   max-width: 300px;       
-  width: 100%;            
+  width: 100%;         
   height: auto;           
   object-fit: cover;      
 }
@@ -1782,11 +1786,11 @@ h1 {
 
 
 .product-odd-card{
-  /* padding: 0px; */
+  padding: 20px 65px;
   background-color: #1C6A38;
   gap: 100px;
   width: 100%;
-  height: 400px;           
+  height: auto;           
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1794,7 +1798,7 @@ h1 {
 }
 
 .product-content, .product-content-odd{
-  width: 50rem
+  width: 100%
 }
 
 .product-content h1, .product-content-odd h1 {
@@ -1802,7 +1806,8 @@ h1 {
 }
 
 .product-content h3 {
-  font-size: 16px;
+  text-align: justify;
+  font-size: 1.125rem;
   color: #666;
   line-height: 1.6;
 }
@@ -1812,7 +1817,8 @@ h1 {
 }
 
 .product-content-odd h3 {
-  font-size: 16px;
+  text-align: justify;
+  font-size: 1.125rem;
   color: #ffffff;
   line-height: 1.6;
 }
@@ -1822,7 +1828,7 @@ h1 {
   .product-even-card, .product-odd-card {
     flex-direction: column;
     height: auto;
-    padding: 10px;
+    padding: 25px;
     gap: 0px;
   }
 
