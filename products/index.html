@@ -64,196 +64,186 @@
 </nav>
 
 
+
 <main class="main-page-content">
 
-  <!--  Page Intro Section-->
   <section class="page-intro-section">
     <p class="page-intro-title">Products</p>
   </section>
-  <section class="product-section">
-    <div class="product-even-card" id="basil">
-      <div class="product-image" >
-        <img src="../img/product_basil.png" alt="Basil">
-      </div>
-      <div class="product-content">
-        <h1>Basil</h1>
-        <h3>
-          <strong>Health Benefits: <br></strong>Basil offers numerous health benefits, including acting as a digestive
-          aid, boosting the immune system, reducing inflammation, and providing antioxidant
-          protection, due to its rich nutrient profile and compounds like eugenol and rosmarinic
-          acid.<br><br>
-          <strong>Culinary Uses: <br></strong>Basil is a versatile herb that enhances various dishes, from Italian pesto
-          to salads and desserts, with its fresh and aromatic flavor. It is advisable to add fresh
-          basil at the end of cooking to preserve its taste, as too much heat can make it bitter.
-          This herb pairs well with ingredients such as tomatoes, mozzarella, olive oil, eggs, and
-          other herbs like rosemary, thyme, and oregano.
-        </h3>
+
+  <div class="products-content container">
+    <!-- Product Cards -->
+
+    <div class="products-item-container">
+      <a class="product-card-p" href="#" data-title="Sage" data-content='<strong>Health Benefits: <br></strong>Sage, a herb with a long history of medicinal use, offers various potential health benefits, including supporting cognitive function, aiding digestion, and promoting relaxation, as well as potentially reducing inflammation and blood sugar levels.<br><br><strong>Culinary Uses: <br></strong>Sage is commonly used in cooking to flavor dishes, especially savory ones like stuffings, pasta sauces, and roasted meats, and can also be used in soups, stews, and as a garnish. <br> <br>- Available in bulk orders of 20g, 31g, 50g, 75g and 100g bunches'>
+        <div class="item-image">
+          <img src="../img/product_sage.png" alt="Sage" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="item-title">Sage</h3>
+        </div>
+      </a>
+    </div>
+    <div class="products-item-container">
+      <a class="product-card-p" href="#" data-title="Basil" data-content='<strong>Health Benefits: <br></strong>Basil offers numerous health benefits, including acting as a digestive aid, boosting the immune system, reducing inflammation, and providing antioxidant protection, due to its rich nutrient profile and compounds like eugenol and rosmarinic acid.<br><br><strong>Culinary Uses: <br></strong>Basil is a versatile herb that enhances various dishes, from Italian pesto to salads and desserts, with its fresh and aromatic flavor. It is advisable to add fresh basil at the end of cooking to preserve its taste, as too much heat can make it bitter. This herb pairs well with ingredients such as tomatoes, mozzarella, olive oil, eggs, and other herbs like rosemary, thyme, and oregano.  <br> <br>- Available in bulk orders of 20g, 31g, 50g, 75g and 100g bunches'>
+        <div class="item-image">
+          <img src="../img/product_basil.png" alt="Fresh Basil" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="item-title">Basil</h3>
+        </div>
+      </a>
+    </div>
+    
+    <div class="custom-modal" id="productModal">
+      <div class="modal-content">
+        <button class="close-btn" onclick="closeModal()">×</button>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img id="modalImage" src="" alt="Product image" />
+          </div>
+          <div class="modal-text">
+            <h1 id="modalTitle"></h1>
+            <div id="modalContent"></div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="product-odd-card">
-      <div class="product-content-odd">
-        <h1>Parsley</h1>
-        <h3>
-          <strong>Health Benefits: <br></strong>Parsley offers numerous health benefits, including supporting kidney
-          function, providing antioxidant protection, and acting as a digestive aid due to its rich
-          nutrient profile.<br><br>
-          <strong>Culinary Uses: <br></strong>Parsley is a versatile herb that enhances various dishes, from garnishing
-          soups and salads to adding flavor to sauces, stews, and fish dishes. It pairs well with
-          ingredients like lemon, garlic, and other herbs like thyme and oregano.
-        </h3>
-      </div>
-      <div class="product-image-odd">
-        <img src="../img/product_parsely.png" alt="Parsley">
-      </div>
+
+    <div class="products-item-container">
+      <a class="product-card-p" href="#" data-title="Thyme" data-content='<strong>Health Benefits: <br></strong>Thyme, a culinary and medicinal herb, offers potential health benefits including boosting immunity, acting as an antioxidant, and aiding in respiratory and skin health due to its antimicrobial and anti-inflammatory properties.<br><br><strong>Culinary Uses: <br></strong>Thyme can be used in cooking to add an earthy, aromatic flavor to a wide array of dishes, including meats, poultry, fish, vegetables, soups, stews, sauces, and even baked goods.  <br> <br>- Available in bulk orders of 20g, 31g, 50g, 75g and 100g bunches'>
+        <div class="item-image">
+          <img src="../img/product_thyme.png" alt="Thyme" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="item-title">Thyme</h3>
+        </div>
+      </a>
     </div>
-    <div class="product-even-card" id="coriander">
-      <div class="product-image">
-        <img src="../img/product_coriander.png" alt="Coriander">
-      </div>
-      <div class="product-content">
-        <h1>Coriander</h1>
-        <h3>
-          <strong>Health Benefits: <br></strong>Coriander offers numerous health benefits, including aiding digestion,
-          reducing inflammation, and providing antioxidant protection due to its rich nutrient
-          profile.<br><br>
-          <strong>Culinary Uses: <br></strong>Coriander is widely used in various cuisines, adding a fresh, citrusy flavor
-          to dishes like salsas, curries, and soups. It pairs well with ingredients like lime, garlic,
-          and chili.
-        </h3>
-      </div>
+    
+    <div class="products-item-container">
+      <a class="product-card-p" href="#" data-title="Rosemary" data-content='<strong>Health Benefits: <br></strong>Rosemary, an herb with a distinct aroma, offers potential health benefits like improved memory, mood, and cognitive function, as well as acting as an antioxidant and anti-inflammatory agent. <br><br><strong>Culinary Uses: <br></strong>Rosemary, a fragrant herb, finds diverse culinary uses, seasoning meats like lamb and chicken, complementing vegetables like potatoes and mushrooms, and adding flavor to soups, stews, and baked goods.  <br> <br>- Available in bulk orders of 20g, 31g, 50g, 75g and 100g bunches'>
+        <div class="item-image">
+          <img src="../img/product_rosemary.png" alt="Rosemary" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="item-title">Rosemary</h3>
+        </div>
+      </a>
     </div>
-    <div class="product-odd-card">
-      <div class="product-content-odd" id="dill">
-        <h1>Dill</h1>
-        <h3>
-          <strong>Health Benefits: <br></strong>Dill offers numerous health benefits, including supporting digestion,
-          reducing inflammation, and providing antimicrobial properties due to its rich nutrient
-          profile.<br><br>
-          <strong>Culinary Uses: <br></strong>Dill is a versatile herb that enhances dishes like fish, potatoes, and
-          yogurt-based sauces with its fresh, tangy flavor. It pairs well with ingredients like
-          lemon, cucumber, and mustard.
-        </h3>
-      </div>
-      <div class="product-image-odd">
-        <img src="../img/product_dill.png" alt="Dill">
-      </div>
+    
+    <div class="products-item-container">
+      <a class="product-card-p" href="#" data-title="Oregano" data-content='<strong>Health Benefits: <br></strong>Oregano, rich in antioxidants and antimicrobial compounds, offers potential health benefits like boosting the immune system, supporting bone health, improving digestion, and fighting inflammation. <br><br><strong>Culinary Uses: <br></strong>Oregano enhances the flavor of various dishes, particularly tomato-based ones like pizza, pasta sauces, and chili, but also works well in marinades, stuffings, and even salads.  <br> <br>- Available in bulk orders of 20g, 31g, 50g, 75g and 100g bunches'>
+        <div class="item-image">
+          <img src="../img/product-oregano.png" alt="Oregano" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="item-title">Oregano</h3>
+        </div>
+      </a>
     </div>
-    <div class="product-even-card"  id="majoram">
-      <div class="product-image">
-        <img src="../img/product_marjoram.png" alt="Marjoram">
-      </div>
-      <div class="product-content">
-        <h1>Marjoram</h1>
-        <h3>
-          <strong>Health Benefits: <br></strong>Sweet marjoram, known as Origanum majorana, offers various health
-          benefits, including digestive, respiratory, and immune support, as well as potential
-          benefits for anxiety and hormonal health.<br><br>
-          <strong>Culinary Uses: <br></strong>Sweet marjoram, a culinary herb with a mild, sweet, and slightly peppery
-          flavor, is widely used in Mediterranean and Middle Eastern cuisines, particularly in
-          dishes like stews, sauces, meats, poultry, fish, and vegetable dishes. It also pairs well
-          with other herbs like basil, thyme, and oregano.
-        </h3>
-      </div>
+
+    <div class="products-item-container">
+      <a class="product-card-p" href="#" data-title="Sweet Marjoram" data-content='<strong>Health Benefits: <br></strong>Sweet marjoram, known as Origanum majorana, offers various health benefits, including digestive, respiratory, and immune support, as well as potential benefits for anxiety and hormonal health.<br><br><strong>Culinary Uses: <br></strong>Sweet marjoram, a culinary herb with a mild, sweet, and slightly peppery flavor, is widely used in Mediterranean and Middle Eastern cuisines, particularly in dishes like stews, sauces, meats, poultry, fish, and vegetable dishes. It also pairs well with other herbs like basil, thyme, and oregano.  <br> <br>- Available in bulk orders of 20g, 31g, 50g, 75g and 100g bunches'>
+        <div class="item-image">
+          <img src="../img/product_marjoram.png" alt="Sweet Marjoram" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="item-title">Sweet Marjoram</h3>
+        </div>
+      </a>
     </div>
-    <div class="product-odd-card">
-      <div class="product-content-odd">
-        <h1>Mint</h1>
-        <h3>
-          <strong>Health Benefits: <br></strong>Mint offers numerous health benefits, including aiding digestion,
-          relieving headaches, and providing a cooling effect due to its menthol content.<br><br>
-          <strong>Culinary Uses: <br></strong>Mint is a versatile herb that enhances both savory and sweet dishes, from
-          salads and beverages to desserts and lamb dishes. It pairs well with ingredients like
-          lemon, chocolate, and peas.
-        </h3>
-      </div>
-      <div class="product-image-odd">
-        <img src="../img/product_mint.png" alt="Mint">
-      </div>
+    <div class="products-item-container">
+      <a class="product-card-p" href="#" data-title="Parsley" data-content='<strong>Health Benefits: <br></strong>Parsley offers numerous health benefits, acting as a nutrient powerhouse rich in vitamins A, C, and K, along with antioxidants that support overall health, including bone health, immune function, and potentially reducing the risk of chronic diseases. <br><br><strong>Culinary Uses: <br></strong>Parsley adds flavor and freshness to various dishes, from salads and soups to sauces and marinades, and is also commonly used as a garnish.  <br> <br>- Available in bulk orders of 20g, 31g, 50g, 75g and 100g bunches'>
+        <div class="item-image">
+          <img src="../img/Parsley.jpg" alt="Parsley" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="item-title">Parsley</h3>
+        </div>
+      </a>
     </div>
-    <div class="product-even-card" id="sage">
-      <div class="product-image">
-        <img src="../img/product_sage.png" alt="Sage">
-      </div>
-      <div class="product-content">
-        <h1>Sage</h1>
-        <h3>
-          <strong>Health Benefits: <br></strong>Sage, a herb with a long history of medicinal use, offers various
-          potential health benefits, including supporting cognitive function, aiding digestion, and
-          promoting relaxation, as well as potentially reducing inflammation and blood sugar
-          levels.<br><br>
-          <strong>Culinary Uses: <br></strong>Sage is commonly used in cooking to flavor dishes, especially savory
-          ones like stuffings, pasta sauces, and roasted meats, and can also be used in soups,
-          stews, and as a garnish.
-        </h3>
-      </div>
+    <div class="products-item-container">
+      <a class="product-card-p" href="#" data-title="Tarragon" data-content='<strong>Health Benefits: <br></strong>Tarragon is associated with various potential health benefits. It has been traditionally used to support digestion, alleviating issues like flatulence and colic. Additionally, tarragon tea is believed to calm the nervous system, aiding in improved sleep and potentially addressing insomnia. <br><br><strong>Culinary Uses: <br></strong>Tarragon, a versatile herb with an anise-like flavor, is used in various cuisines, particularly French, Russian, and Mediterranean dishes, adding a unique tang to dishes like salads, sauces, marinades, and even drinks.  <br> <br>- Available in bulk orders of 20g, 31g, 50g, 75g and 100g bunches'>
+        <div class="item-image">
+          <img src="../img/tarragonn.jpg" alt="tarragon" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="item-title">Tarragon</h3>
+        </div>
+      </a>
     </div>
-    <div class="product-odd-card">
-      <div class="product-content-odd" id="thyme">
-        <h1>Thyme</h1>
-        <h3>
-          <strong>Health Benefits: <br></strong>Thyme, a culinary and medicinal herb, offers potential health benefits
-          including boosting immunity, acting as an antioxidant, and aiding in respiratory and skin
-          health due to its antimicrobial and anti-inflammatory properties.<br><br>
-          <strong>Culinary Uses: <br></strong>Thyme can be used in cooking to add an earthy, aromatic flavor to a
-          wide array of dishes, including meats, poultry, fish, vegetables, soups, stews, sauces,
-          and even baked goods.
-        </h3>
-      </div>
-      <div class="product-image-odd">
-        <img src="../img/product_thyme.png" alt="Thyme">
-      </div>
+
+    <div class="products-item-container">
+      <a class="product-card-p" href="#" data-title="Lovage" data-content='<strong>Health Benefits: <br></strong>Lovage, a medicinal herb, has been known to improve kidney health due to its diuretic properties. The anti-inflammatory benefits of lovage may also soothe an upset inflamed stomach, and alleviate menstruation-related symptoms such as cramps, pain and bloating.<br><br><strong>Culinary Uses: <br></strong>Lovage, a celery-like herb, can be used in various culinary applications, including soups, stews, sauces, salads, and even as a flavoring for meat, poultry, and fish, with its leaves, stems, and seeds all being edible.  <br> <br>- Available in bulk orders of 20g, 31g, 50g, 75g and 100g bunches'>
+        <div class="item-image">
+          <img src="../img/Lovage.jpg" alt="Lovage" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="item-title">Lovage</h3>
+        </div>
+      </a>
     </div>
-    <div class="product-even-card" id="rosemary">
-      <div class="product-image">
-        <img src="../img/product_rosemary.png" alt="Rosemary">
-      </div>
-      <div class="product-content">
-        <h1>Rosemary</h1>
-        <h3>
-          <strong>Health Benefits: <br></strong>Rosemary, an herb with a distinct aroma, offers potential health benefits
-          like improved memory, mood, and cognitive function, as well as acting as an antioxidant
-          and anti-inflammatory agent.<br><br>
-          <strong>Culinary Uses: <br></strong>Rosemary, a fragrant herb, finds diverse culinary uses, seasoning meats
-          like lamb and chicken, complementing vegetables like potatoes and mushrooms, and
-          adding flavor to soups, stews, and baked goods.
-        </h3>
-      </div>
+    <div class="products-item-container">
+      <a class="product-card-p" href="#" data-title="Sorrel" data-content='<strong>Health Benefits: <br></strong>Sorrel boasts numerous health benefits, including being rich in vitamins and minerals, acting as an antioxidant, and potentially aiding in digestion and heart health. <br><br><strong>Culinary Uses: <br></strong>Sorrel, a herb with a sharp, lemony flavor, is used in various cuisines, particularly in soups, sauces, salads, and as a flavoring herb, often combined with other ingredients to balance its tartness.  <br> <br>- Available in bulk orders of 20g, 31g, 50g, 75g and 100g bunches'>
+        <div class="item-image">
+          <img src="../img/Sorrel.gif" alt="Sorrel" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="item-title">Sorrel</h3>
+        </div>
+      </a>
     </div>
-    <div class="product-odd-card">
-      <div class="product-content-odd">
-        <h1>Chamomile</h1>
-        <h3>
-          <strong>Health Benefits: <br></strong>Chamomile offers numerous health benefits, including promoting relaxation,
-          aiding sleep, and reducing inflammation due to its calming properties.<br><br>
-          <strong>Culinary Uses: <br></strong>Chamomile is often used in teas and infusions, but can also be incorporated
-          into desserts and baked goods for a subtle floral flavor.
-        </h3>
-      </div>
-      <div class="product-image-odd">
-        <img src="../img/product-chamomile.png" alt="Chamomile">
-      </div>
+
+    <div class="products-item-container">
+      <a class="product-card-p" href="#" data-title="Lemon Balm (Melissa)" data-content='<strong>Health Benefits: <br></strong>Lemon balm, a member of the mint family, offers a range of potential health benefits, including reducing anxiety, promoting sleep, and supporting cognitive function. It may also help with digestive issues, cold sores, and PMS symptoms, with some studies suggesting potential benefits for cardiovascular health and even some neurological conditions.<br><br><strong>Culinary Uses: <br></strong>Lemon balm has a wide range of culinary applications, offering both sweet and savory flavor enhancements. It can be used in teas, salads, desserts, sauces, and even as a substitute for lemon zest.  <br> <br>- Available in bulk orders of 20g, 31g, 50g, 75g and 100g bunches'>
+        <div class="item-image">
+          <img src="../img/lemonbalm.png" alt="Lemonbalm" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="item-title">Lemon Balm</h3>
+        </div>
+      </a>
     </div>
-    <div class="product-even-card" id="oregano">
-      <div class="product-image">
-        <img src="../img/product-oregano.png" alt="Oregano">
-      </div>
-      <div class="product-content">
-        <h1>Oregano</h1>
-        <h3>
-          <strong>Health Benefits: <br></strong>Oregano, rich in antioxidants and antimicrobial compounds, offers
-          potential health benefits like boosting the immune system, supporting bone health,
-          improving digestion, and fighting inflammation.<br><br>
-          <strong>Culinary Uses: <br></strong>Oregano enhances the flavor of various dishes, particularly tomato-
-          based ones like pizza, pasta sauces, and chili, but also works well in marinades,
-          stuffings, and even salads.
-        </h3>
-      </div>
+
+    <div class="products-item-container">
+      <a class="product-card-p" href="#" data-title="Chives" data-content='<strong>Health Benefits: <br></strong>Chives offer several health benefits due to their nutrient-rich profile and potent compounds. They can boost immunity, regulate blood sugar, promote bone health, and aid digestion. Chives also contain antioxidants that may protect cells from damage. <br><br><strong>Culinary Uses: <br></strong>Chives, a mild onion-flavored herb, are versatile and commonly used to enhance various dishes, both raw and cooked. They are often chopped and sprinkled on top of soups, salads, and egg dishes. Chives also work well when mixed into cream cheese, compound butter, and salad dressings.  <br> <br>- Available in bulk orders of 20g, 31g, 50g, 75g and 100g bunches'>
+        <div class="item-image">
+          <img src="../img/Chives.jpg" alt="Chives" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="item-title">Chives</h3>
+        </div>
+      </a>
     </div>
-</section>
+
+    <div class="products-item-container">
+      <a class="product-card-p" href="#" data-title="Red Habanero" data-content='<strong>Health Benefits: <br></strong>Red habanero peppers offer several potential health benefits, primarily due to their high content of capsaicin, vitamins C and A, and antioxidants. Capsaicin can help boost metabolism, aid in weight loss, and reduce inflammation, while vitamins C and A support immune health and eye health. <br><br><strong>Culinary Uses: <br></strong>Red habanero peppers are a culinary staple, prized for their intense heat and fruity flavor. They are widely used in hot sauces, salsas, and other dishes, adding a fiery kick and vibrant color. Habaneros can be used fresh or dried, and are versatile enough to be incorporated into marinades, chili pastes, and even some desserts.  <br> <br>- Available in bulk orders of 20g, 31g, 50g, 75g and 100g bunches'>
+        <div class="item-image">
+          <img src="../img/Red Habanero.jpg" alt="Red Habanero" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="item-title">Red Habanero</h3>
+        </div>
+      </a>
+    </div>
+
+    <div class="products-item-container">
+      <a class="product-card-p" href="#" data-title="Thai Basil" data-content='<strong>Health Benefits: <br></strong>Thai basil offers several health benefits, including antioxidant and anti-inflammatory properties, stress reduction, and potential support for various health conditions. Its rich in vitamins and minerals, and its aroma can be used for stress relief. Additionally, Thai basil is believed to have antibacterial and antiviral properties.  <br><br><strong>Culinary Uses: <br></strong>Thai basil is a versatile culinary herb widely used in Southeast Asian dishes, particularly Thai, Vietnamese, and Lao cuisines. Its known for its strong, licorice-like flavor and robust leaves that hold up well to cooking. Thai basil can be used fresh in salads, stir-fries, noodle dishes, and curries, or incorporated into sauces and even cocktails.  <br> <br>- Available in bulk orders of 20g, 31g, 50g, 75g and 100g bunches'>
+        <div class="item-image">
+          <img src="../img/Thai Basil.jpg" alt="Thai Basil" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="item-title">Thai Basil</h3>
+        </div>
+      </a>
+    </div>
 
 
+
+
+  </div>
 </main>
-
 
 
 
@@ -334,16 +324,6 @@
 
     
       </div>
-
-      
-      <!-- <div class="footer-newsletter">
-        <h3 class="links-heading">Newsletter</h3>
-        <p>Subscribe to our newsletter for the latest updates and offers</p>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Your email address" required>
-          <button type="submit">Subscribe</button>
-        </form>
-      </div> -->
     </div>
 
     <div class="footer-bar"></div>
@@ -366,6 +346,63 @@
 
 <script src="../js/bootstrap.bundle.min.js"></script>
 
+<script>
+  // Wait for DOM to be fully loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all product cards
+    const cards        = document.querySelectorAll('.product-card-p');
+    const modal        = document.getElementById('productModal');
+    const modalImage   = document.getElementById('modalImage');
+    const modalTitle   = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+
+    // Check if required elements exist
+    if (!modal || !modalImage || !modalTitle || !modalContent) {
+      console.error('One or more modal elements not found in the DOM:', {
+        modal, modalImage, modalTitle, modalContent
+      });
+      return;
+    }
+
+    // Add click event listener to each card
+    cards.forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default anchor behavior
+
+        // Get data attributes
+        const title   = card.getAttribute('data-title')   || 'No Title';
+        const content = card.getAttribute('data-content') || 'No Content Available';
+
+        // Grab the card image
+        const imgEl = card.querySelector('img');
+        const src   = imgEl?.src   || '';
+        const alt   = imgEl?.alt   || title;
+
+        // Populate modal
+        modalImage.src    = src;
+        modalImage.alt    = alt;
+        modalTitle.textContent   = title;
+        modalContent.innerHTML   = content;
+
+        // Show modal
+        modal.style.display = 'flex';
+      });
+    });
+
+    // Close modal function
+    window.closeModal = function() {
+      modal.style.display = 'none';
+    };
+
+    // Close modal when clicking outside the modal content
+    window.addEventListener('click', function(event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+  });
+</script>
+  
 <script>
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
