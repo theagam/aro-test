@@ -895,7 +895,7 @@ h1 {
 
 .impact-images {
   display: grid;
-  padding: 2rem 0;
+  padding: 20px;
   gap: 2rem; /* Reduced gap for tighter spacing */
   justify-items: center;
   align-items: center;
@@ -934,12 +934,13 @@ h1 {
 
 /*Certifications Section*/
 .certifications-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .certifications-title {
   text-align: center;
+  padding: 20px;
 }
 
 .certifications-content {
@@ -960,7 +961,11 @@ h1 {
 
 @media (max-width: 576px) {
   .certifications-content {
-    padding: 0 20px; 
+    padding: 20px 20px; 
+  }
+  .memberships-logos {
+    padding: 20px 20px; 
+
   }
   .certifications-content img {
     flex: 0 0 calc(50% - 10px);
@@ -971,7 +976,7 @@ h1 {
 }
 
 .memberships-section {
-  padding: 40px 20px;
+  margin-bottom: 30px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -980,6 +985,7 @@ h1 {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  padding: 20px;
 }
 
 .section-title {
@@ -1003,15 +1009,11 @@ h1 {
   max-width: 100%;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
-  .memberships-logos {
-    flex-direction: column; 
-    gap: 20px; 
-  }
-
   .memberships-logos img {
-    width: 150px;
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    margin-top: 0px;
   }
 
   .section-title {
@@ -1019,14 +1021,18 @@ h1 {
   }
 }
 
-/* For very small screens */
+/* Very small devices (optional tweak) */
 @media (max-width: 480px) {
   .memberships-logos img {
-    width: 120px;
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
   }
 
   .section-title {
     font-size: 1.2rem;
+  }
+  .memberships-container{
+    padding: 0px;
   }
 }
 
@@ -2058,18 +2064,48 @@ h1 {
   aspect-ratio: 16 / 9; 
   border: none;
 }
-
 .article-link {
   text-align: center;
   margin-top: 20px;
   font-size: 20px;
 }
 
-.article-link a {
-  color: #007BFF;
-  text-decoration: underline;
+.media-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  text-align: left;
+  flex-wrap: nowrap;
 }
 
+.media-content img {
+  width: 100%;
+  max-width: 40rem;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+
+  .gallery-section {
+    padding: 30px 0;
+}
+
+  .media-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .media-content img {
+    max-width: 100%;
+  }
+
+  .article-link {
+    font-size: 16px;
+  }
+}
 
 .gallery-container {
   max-width: 1400px;
