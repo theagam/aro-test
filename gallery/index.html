@@ -97,6 +97,18 @@
       <div class="gallery-item"><img src="../img/gallery12.jpg" class="gallery-img" alt="Gallery Image 19" loading="lazy"></div>
     </div>
 
+    <!-- YouTube Video Below Grid -->
+    <div class="video-container">
+      <iframe 
+        class="video-iframe" 
+        src="https://www.youtube.com/embed/vg3Bzguyku4" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
     <!-- Zoom Overlay -->
     <div class="zoom-overlay" id="zoomOverlay">
       <div class="zoom-container">
@@ -222,7 +234,14 @@
 
 
 
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
 
+  menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+  });
+</script>
 
 <script>
   const galleryItems = document.querySelectorAll('.gallery-item');
