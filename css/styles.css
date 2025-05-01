@@ -468,6 +468,8 @@ body {
   width: 100%;
   max-width: 500px;
   height: auto;
+  border-radius: 10px;
+
 }
 
 .agriHeader {
@@ -690,14 +692,14 @@ h1 {
 
 /*Featured Products Section*/
 .featured-products-section {
-  padding: 50px 0;
+  padding: 30px 0;
   background: linear-gradient(135deg, #fbfdf2 0%, #e3e9cf 100%);
   position: relative;
   overflow: hidden;
 }
 
 .products-title {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   text-align: center;
 }
 
@@ -771,7 +773,7 @@ h1 {
   background: #fff;
   border-radius: 15px;
   overflow: hidden;
-  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease;
   /* height: 100%; */
   display: flex;
@@ -923,7 +925,7 @@ h1 {
 
 /* impact section */
 .impact-section {
-  padding-top: 50px;
+  padding: 10px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -1025,6 +1027,8 @@ h1 {
   }
 }
 
+
+
 .memberships-section {
   margin-bottom: 30px;
   width: 100%;
@@ -1035,8 +1039,15 @@ h1 {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  padding: 20px;
+  padding-bottom: 20px;
 }
+.certificates-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
 
 .section-title {
   font-size: 2rem;
@@ -1082,7 +1093,7 @@ h1 {
     font-size: 1.2rem;
   }
 
-  .memberships-container {
+  .memberships-container,.certificates-container {
     padding: 0px;
   }
 }
@@ -1509,11 +1520,26 @@ h1 {
   justify-content: center;
   height: 250px;
   text-align: center;
-  background: url("/img/page-header-bg-1-1.jpg") no-repeat center center;
+  background: url("/img/Header Sections Photo.jpg") no-repeat center center;
   background-size: cover;
   overflow: hidden;
   border-bottom: 2px solid #e0e8d5;
+  color: white; /* ensure text is visible */
 }
+
+.page-intro-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.page-intro-section > * {
+  position: relative;
+  z-index: 2;
+}
+
 
 .page-intro-title {
   color: #fff;
@@ -1564,6 +1590,7 @@ h1 {
 }
 
 .farm-layout {
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -2083,7 +2110,7 @@ h1 {
 }
 
 .custom-modal .close-btn:hover {
-  color: #000;
+  color: #fff;
 }
 
 @keyframes slideIn {
@@ -2176,7 +2203,7 @@ h1 {
 
 .article-link {
   text-align: center;
-  margin-top: 20px;
+  padding: 20px 0;
   font-size: 20px;
 }
 
@@ -2215,6 +2242,7 @@ h1 {
   }
 
   .article-link {
+    padding: 0;
     font-size: 16px;
   }
 }
