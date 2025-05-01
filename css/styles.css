@@ -2163,7 +2163,7 @@ h1 {
 .video-container {
   display: flex;
   gap: 20px;
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
   margin-top: 20px;
   max-width: 100%;
 }
@@ -2184,7 +2184,10 @@ h1 {
   display: flex;
   gap: 20px;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
+  /* padding: 4px 15px; */
+  margin: auto;
+  max-width: 1320px;
   text-align: left;
   flex-wrap: nowrap;
 }
