@@ -1544,9 +1544,9 @@ h1 {
 
 /*Our Story Section*/
 .wrapper {
-  max-width: 1200px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 4px 65px;
 }
 
 .story-section {
@@ -1704,6 +1704,9 @@ h1 {
 .vision-mission-content {
   display: flex;
   justify-content: space-between;
+  max-width: 1320px;
+  margin: auto;
+  padding: 4px 65px;
 }
 
 .vision-section {
