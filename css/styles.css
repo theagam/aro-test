@@ -2217,15 +2217,16 @@ h1 {
 }
 
 .gallery-container {
-  max-width: 1400px;
+  max-width: 1320px;
   margin: 0 auto;
+  padding: 4px 65px;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .gallery-item {
